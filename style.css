@@ -1,0 +1,88 @@
+*{
+    margin: 0px;
+    padding: 0px;
+    box-sizing: border-box;
+    font-family: gilroy;
+    color:white;
+}
+
+html , body{
+    height:100% ;
+    width:100%  ;
+}
+nav{
+    display: flex;
+    position: fixed;
+    /* background-color: red; */
+    align-items: center;
+    justify-content: space-between;
+    width: 100%;
+    padding: 2vw 10vw; /* upr-niche , left-right*/
+    text-transform: uppercase;
+}
+#nav:hover #nav-bottom{
+    height: 100%;
+    bottom: -100%;
+}
+#nav-part2{
+    display: flex;
+    gap: 2vw;
+    font-size: 1vw;
+}
+#nav-bottom{
+    height: 0%;
+    width: 79%;
+    background-color: red;
+    bottom: 0%;
+    position: absolute;     /* it's so much important , if we don't use this then it will impact much more*/
+    transition: all ease 0.65s;
+    border-bottom: 1px solid #dadada;
+}
+
+#page1{
+    /* height: 100%; since we have't give any dimensions to the main div so how can we use the 100% property to his child */
+    height: 100vh;
+    width: 100vw ;
+    background-color: #111;
+    display: flex;
+    flex-direction: column;
+    justify-content: center;
+    align-items: center;
+}
+#page1 h1 {
+    font-size: 8.5vw;
+    font-weight: 900;
+    text-transform: capitalize;   /* set the text property */
+    line-height: 8.5vw;     /* give the gap between the lines*/
+}
+#page1 h1 svg {
+    height: 12vh;
+    font-weight: 12vw;
+    background-color: #0DA34E;
+    border-radius: 50%;
+}
+#page1 p{
+    text-align: center;
+    font-weight:400;
+    margin-top: 3vh;
+}
+#page1-something{
+    display: flex;
+}
+#page1-something h4{
+    border: 1px solid rgb(162, 161, 161);
+    border-radius: 50px;
+    font-size: 1vw;
+    font-weight: 400;
+    padding: 2px;
+    margin-top: .5vh;
+    text-transform: lowercase;
+}
+#page1-something h4:nth-child(3){
+    border: none;
+    padding: 2px;
+}
+#page2{
+    height: 100vh;
+    width: 100vh;
+}
