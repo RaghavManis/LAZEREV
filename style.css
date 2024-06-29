@@ -18,27 +18,23 @@ nav{
     justify-content: space-between;
     width: 100%;
     padding: 2vw 10vw; /* upr-niche , left-right*/
-    text-transform: uppercase;
 }
-#nav:hover #nav-bottom{
-    height: 100%;
-    bottom: -100%;
+#nav-part2 h4{
+    text-transform: uppercase;
 }
 #nav-part2{
     display: flex;
-    gap: 2vw;
-    font-size: 1vw;
+    gap: 3.9vw;
+    font-size: 0.76vw;
 }
 #nav-bottom{
     height: 0%;
     width: 79%;
-    background-color: red;
     bottom: 0%;
     position: absolute;     /* it's so much important , if we don't use this then it will impact much more*/
     transition: all ease 0.65s;
     border-bottom: 1px solid #dadada;
 }
-
 #page1{
     /* height: 100%; since we have't give any dimensions to the main div so how can we use the 100% property to his child */
     height: 100vh;
