@@ -13,12 +13,13 @@ html , body{
 nav{
     display: flex;
     position: fixed;
-    /* background-color: green; */
+    background-color: #111;
     align-items: flex-start;
     justify-content: space-between;
     height: 12vh;
     width: 100%;
     padding: 2vw 10vw; /* upr-niche , left-right*/
+    z-index: 100;
 }
 #nav-part2{
     display: flex;
@@ -73,9 +74,29 @@ nav{
     text-transform: capitalize;   /* set the text property */
     line-height: 8.5vw;     /* give the gap between the lines*/
 }
-#page1 h1 svg {
+#page1 h1 svg  {
     height: 12vh;
     font-weight: 12vw;
+    background-color: #0DA34E;
+    border-radius: 50%;
+}
+#nav-botton{
+    background-color: #0DA34E;
+    border-radius: 50px;
+    display: flex;
+    align-items: center;
+    justify-content: center;
+}
+#nav-botton-span1{
+    text-transform: uppercase;
+    font-size: 1vw;
+    font-weight: 600;
+    padding: 1vw;
+
+}
+#nav-botton-span2{
+    height: 5.5vh;
+    font-weight: 5.5vw;
     background-color: #0DA34E;
     border-radius: 50%;
 }
@@ -100,7 +121,55 @@ nav{
     border: none;
     padding: 2px;
 }
+#moving-div{
+    position: absolute;
+    margin-top: 10vh;
+    bottom: 3%;
+    /* background-color: red; */
+    width: 44%;
+    white-space: nowrap;
+    padding: 1.2vw ;
+    overflow: hidden;
+}
+#moving-div .move{
+    display: inline-block;
+    animation-name: mobe;
+    animation-duration: 9999ms;  /* this tag is controling speed (i don't know how )*/
+    animation-timing-function: linear;
+    animation-iteration-count: infinite;
+}
+#moving-div .move img{
+    height: 1vw;
+    margin: 0 1.2vw;
+}
+#blur-left{
+    height: 100%;
+    width: 20%;
+    left: 0;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(to right, #111, transparent );
+}
+#blur-right{
+    height: 100%;
+    width: 20%;
+    right: 0;
+    top: 0;
+    position: absolute;
+    z-index: 2;
+    background: linear-gradient(to right, transparent, #111 );
+}
+@keyframes mobe  {   /* creating animation for moving div*/
+    0%{
+        transform: translateX(0);
+    }
+    100%{
+        transform: translateX(-100%);
+    }
+}
 #page2{
     height: 100vh;
-    width: 100vh;
+    width: 100%;
+    background-color: #111;
 }
