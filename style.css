@@ -20,19 +20,19 @@ nav{
     width: 100%;
     padding: 2vw 10vw; /* upr-niche , left-right*/
     z-index: 100;
-}
+} 
 #nav-part2{
     display: flex;
     gap: 1vw;
     align-items: flex-start;
-    padding: 1vh 0;
+    padding: 2vh 0;
     position: relative;
     z-index: 10;
 }
 #nav-part2 h4{
     text-transform: uppercase;
     font-size: 1vw;
-    font-weight: 600;
+    font-weight: 400;
     margin-bottom: 2.6vw;
 }
 #nav-part2 h5{

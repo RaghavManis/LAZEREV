@@ -13,7 +13,7 @@ function navAnimation() {
       stagger: {
         amount: 0.6,
       },
-    });
+    }); 
   });
 
   nav.addEventListener("mouseleave", function () {
