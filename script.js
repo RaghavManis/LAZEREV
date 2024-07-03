@@ -87,7 +87,7 @@ function page3Animation() {
     });
   });
 }
-
-page1Animation() ;
-page2Animation() ;
+ 
+// page1Animation() ;
+// page2Animation() ;
 page3Animation() ;
